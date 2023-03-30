@@ -28,4 +28,4 @@ model.add(Dense(1,activation='sigmoid'))
 model.summary()
 ```
 
-MODEL ACCURACY on validation data : **0.6588**, this accuracy is low because this the very simple achitecture. Accuracy can be improved by tuning the hyperparameters of the network.
+**Model accuracy on validation data : 0.77**, this accuracy is low because this the very simple achitecture. Accuracy can be improved by tuning the hyperparameters of the network.
