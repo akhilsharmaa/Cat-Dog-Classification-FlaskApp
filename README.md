@@ -6,19 +6,26 @@ Cat-Dog Classification **CNN**(Convolutional Neural Networks) Flask web-app. Thi
 
 **Dataset** : [kaggle.com/competitions/dogs-vs-cats/](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 
-**Video-demo**: [youtu.be/Pp9sU7PkUfo](https://youtu.be/Pp9sU7PkUfo)
+**Video-demo**: [youtu.be/0w5E9YOj_Qg](https://youtu.be/0w5E9YOj_Qg)
 
 ### Model ARCHITECTURE 
 ```
+#initializing the cnn
 model = Sequential()
 
 model.add(Convolution2D(64,3,3,input_shape=(264,264,3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 
+model.add(Convolution2D(64, 3, 3, activation='relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+
 model.add(Flatten())
 model.add(Dense(128,activation='relu'))
 model.add(Dense(32,activation='relu'))
+model.add(Dense(16,activation='relu'))
 model.add(Dense(1,activation='sigmoid'))
+
+model.summary()
 ```
 
 MODEL ACCURACY on validation data : **0.6588**, this accuracy is low because this the very simple achitecture. Accuracy can be improved by tuning the hyperparameters of the network.
