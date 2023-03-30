@@ -2,12 +2,13 @@
 
 <!--- <img alt="Screenshot 2023-03-26 at 4 48 50 PM" height='300px' src="https://user-images.githubusercontent.com/74103314/227773997-88fe9d13-8dfb-4d34-979a-b4abc6b785b1.png"> -->
 
-Cat-Dog Classification using 1 layer of **CNN**(Convolutional Neural Networks). This model takes input as format of **256 x 256 x 3** and output as a sigmoid function. 
+Cat-Dog Classification **CNN**(Convolutional Neural Networks) Flask web-app. This model takes input as format of **256 x 256 x 3** and output as a sigmoid function. 
 
-Dataset : [kaggle_dataset_link](https://www.kaggle.com/competitions/dogs-vs-cats/data)
+**Dataset** : [kaggle.com/competitions/dogs-vs-cats/](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 
+**Video-demo**: [youtu.be/Pp9sU7PkUfo](https://youtu.be/Pp9sU7PkUfo)
 
-### CNN Model ARCHITECTURE 
+### Model ARCHITECTURE 
 ```
 model = Sequential()
 
@@ -21,8 +22,3 @@ model.add(Dense(1,activation='sigmoid'))
 ```
 
 MODEL ACCURACY on validation data : **0.6588**, this accuracy is low because this the very simple achitecture. Accuracy can be improved by tuning the hyperparameters of the network.
-
-
-<br> 
-RUN THIS PROJECT 
-- **Clone** this repo 
